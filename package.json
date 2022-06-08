@@ -2,9 +2,13 @@
   "name": "athena",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "index.ts",
+  "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "eslint --cache .",
+    "lint-fix": "npm run lint -- --fix",
+    "dev": "node index.ts"
   },
   "repository": {
     "type": "git",
@@ -12,7 +16,7 @@
   },
   "keywords": [],
   "author": "",
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/simonekranawetter/athena/issues"
   },
@@ -22,6 +26,9 @@
     "dotenv": "^16.0.1"
   },
   "devDependencies": {
-    "eslint": "^8.17.0"
+    "@typescript-eslint/eslint-plugin": "^5.27.1",
+    "eslint": "^8.17.0",
+    "eslint-plugin-jest": "^26.5.3",
+    "jest": "^28.1.1"
   }
 }
