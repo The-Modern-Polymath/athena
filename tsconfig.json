@@ -4,16 +4,17 @@
     "esModuleInterop": true,
     "moduleResolution": "node",
     "newLine": "LF",
-    "outDir": "./lib/",
+    "outDir": "./build/",
     "target": "es6",
     "sourceMap": true,
     "declaration": true,
     "jsx":"preserve",
-    "lib":["es2022"],
+    "lib":["es2021"],
     "strict": true
   },
   "exclude": [
     ".git",
-    "node_modules"
+    "node_modules",
+    "build"
   ]
 }
