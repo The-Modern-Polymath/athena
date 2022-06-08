@@ -1,0 +1,18 @@
+{
+  "compilerOptions": {
+    "module": "CommonJS",
+    "moduleResolution": "node",
+    "newLine": "LF",
+    "outDir": "./lib/",
+    "target": "es6",
+    "sourceMap": true,
+    "declaration": true,
+    "jsx":"preserve",
+    "lib":["es2017"],
+    "strict": true,
+  },
+  "exclude": [
+    ".git",
+    "node_modules"
+  ]
+}
