@@ -1,0 +1,11 @@
+# Developer tooling
+.vscode
+.eslintcache
+coverage
+
+# Environment file
+.env
+
+# node
+node_modules/
+npm-debug.log
