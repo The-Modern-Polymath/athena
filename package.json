@@ -9,7 +9,9 @@
     "dev": "npx ts-node --esm index.ts",
     "lint": "eslint --cache .",
     "lint-fix": "npm run lint -- --fix",
+    "test:standalone": "jest",
     "test": "echo \"Error: no test specified\" ",
+    "posttest": "npm run lint",
     "start": "npm run build && node build/index.js"
   },
   "repository": {
