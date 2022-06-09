@@ -10,7 +10,7 @@
     "lint": "eslint --cache .",
     "lint-fix": "npm run lint -- --fix",
     "test:standalone": "jest",
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "npm run test:standalone",
     "posttest": "npm run lint",
     "start": "npm run build && node build/index.js"
   },
@@ -30,7 +30,12 @@
     "dotenv": "^16.0.1"
   },
   "devDependencies": {
+    "@babel/core": "^7.18.2",
+    "@babel/preset-env": "^7.18.2",
+    "@babel/preset-typescript": "^7.17.12",
+    "@types/jest": "^28.1.1",
     "@typescript-eslint/eslint-plugin": "^5.27.1",
+    "babel-jest": "^28.1.1",
     "eslint": "^8.17.0",
     "eslint-plugin-jest": "^26.5.3",
     "jest": "^28.1.1",
