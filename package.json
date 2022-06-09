@@ -10,7 +10,7 @@
     "lint": "eslint --cache .",
     "lint-fix": "npm run lint -- --fix",
     "test:standalone": "jest",
-    "test": "echo \"Error: no test specified\" ",
+    "test": "echo \"Error: no test specified\" && exit 1",
     "posttest": "npm run lint",
     "start": "npm run build && node build/index.js"
   },
