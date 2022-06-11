@@ -23,7 +23,6 @@
     },
     "rules": {
         "@typescript-eslint/indent": ["error", 4],
-        "linebreak-style": ["error", "unix"],
         "@typescript-eslint/quotes": ["error", "single"],
         "@typescript-eslint/semi": ["error", "always"],
         "dot-location": ["error", "property"],
