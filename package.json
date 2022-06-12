@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.ts",
+  "engines": {
+      "node": ">=16.9"
+  },
   "type": "module",
   "scripts": {
     "build": "tsc",
