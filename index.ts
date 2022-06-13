@@ -1,5 +1,11 @@
-import { Client, Intents } from 'discord.js';
+import {
+    BaseCommandInteraction,
+    Client,
+    Intents,
+    Interaction
+} from 'discord.js';
 import 'dotenv/config';
+import { Commands } from './Commands.js';
 
 const client = new Client({
     intents: [
@@ -8,10 +14,17 @@ const client = new Client({
     ]
 });
 
-client.on('ready', () => {
+client.on('ready', async () => {
+    if (client.application !== null) {
+        await client.application.commands.set(Commands);
+    }
+    else {
+        console.log('There was an error in command initialization.');
+    }
     console.log('Hi bob! The bot is ready!');
 });
 
+/*
 client.on('messageCreate', async (message) => {
     if (message.content === 'ping') {
         await message.reply({
@@ -19,6 +32,27 @@ client.on('messageCreate', async (message) => {
         });
     }
 });
+*/
+client.on('interactionCreate', async (interaction: Interaction) => {
+    if (interaction.isCommand() || interaction.isContextMenu()) {
+        await handleSlashCommand(client, interaction);
+    }
+});
+
+const handleSlashCommand = async(
+    client: Client,
+    interaction: BaseCommandInteraction
+) => {
+    const slashCommand = Commands.find(
+        (c) => c.name === interaction.commandName
+    );
+    if (!slashCommand) {
+        await interaction.followUp({ content: '404 Command not found' });
+        return;
+    }
+    await interaction.deferReply();
+    slashCommand.run(client, interaction);
+};
 
 client.login(process.env.TOKEN).catch((err) => {
     console.log(err);
