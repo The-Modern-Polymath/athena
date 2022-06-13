@@ -12,10 +12,10 @@
     "lib":["es2021"],
     "strict": true
   },
+  "include": [
+    "src"
+  ],
   "exclude": [
-    ".git",
-    "node_modules",
-    "build",
-    "commands/tests"
+    "src/commands/tests"
   ]
 }

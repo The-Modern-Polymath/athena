@@ -2,14 +2,14 @@
   "name": "athena",
   "version": "1.0.0",
   "description": "",
-  "main": "index.ts",
+  "main": "./src/index.ts",
   "engines": {
       "node": ">=16.9"
   },
   "type": "module",
   "scripts": {
     "build": "tsc",
-    "dev": "npx ts-node --esm index.ts",
+    "dev": "npx ts-node --esm ./src/index.ts",
     "lint": "eslint --cache .",
     "lint-fix": "npm run lint -- --fix",
     "test:standalone": "jest",
@@ -19,15 +19,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/simonekranawetter/athena.git"
+    "url": "git+https://github.com/The-Modern-Polymath/athena.git"
   },
   "keywords": [],
   "author": "",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/simonekranawetter/athena/issues"
+    "url": "https://github.com/TheModern-Polymath/athena/issues"
   },
-  "homepage": "https://github.com/simonekranawetter/athena#readme",
+  "homepage": "https://github.com/The-Modern-Polymath/athena#readme",
   "dependencies": {
     "discord.js": "^13.8.0",
     "dotenv": "^16.0.1",
