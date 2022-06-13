@@ -1,4 +1,4 @@
-import { PingPong } from '../pingpong';
+import { PingPong } from '../src/commands/pingpong';
 import { mockInteraction } from './mockInteraction';
 
 test('PingPong command returns pong', () => {
