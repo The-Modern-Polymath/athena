@@ -8,8 +8,7 @@ Athena is assisting the Modern Polymath discord server to welcome members and re
 
 The Modern Polymath is a discord and habitica community focused on gaining new knowledge and sharing it with others. We are an open minded, inclusive community dedicated to polymathy via lifelong co-operative learning and challenges.
 
-
-                                                          ```                                                                                                      
+```                                                                                                      
                                                              #%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%                                                            
                                                      %%%%%%%                                         #%%%%%#                                                    
                                                %%%%%,          ,%%%%#    %     /%     %(    (%%%%,          .%%%%%                                              
@@ -73,4 +72,4 @@ The Modern Polymath is a discord and habitica community focused on gaining new k
                                                #%%%%#           /%%%%%%      %     ##    /%(%%%%/         #%%%%%%#                                              
                                                      /%%%%%%%                                     #%%%%%%%%/                                                    
                                                              .%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%.   
-                                                                ```
+```
