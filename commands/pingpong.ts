@@ -1,4 +1,4 @@
-import { BaseCommandInteraction, Client } from 'discord.js';
+import { BaseCommandInteraction } from 'discord.js';
 import { Command } from '../Command';
 
 export const PingPong: Command = {
@@ -7,10 +7,10 @@ export const PingPong: Command = {
     type: 'CHAT_INPUT',
     // Will ignore the below ESLint error for now,
     // hopefully it doesn't break things later
-    run: async (client: Client, interaction: BaseCommandInteraction) => {
+    run: (interaction: BaseCommandInteraction) => {
         const content = 'pong';
 
-        await interaction.followUp({
+        void interaction.followUp({
             ephemeral: true,
             content
         });

@@ -24,23 +24,13 @@ client.on('ready', async () => {
     console.log('Hi bob! The bot is ready!');
 });
 
-/*
-client.on('messageCreate', async (message) => {
-    if (message.content === 'ping') {
-        await message.reply({
-            content: 'pong',
-        });
-    }
-});
-*/
 client.on('interactionCreate', async (interaction: Interaction) => {
     if (interaction.isCommand() || interaction.isContextMenu()) {
-        await handleSlashCommand(client, interaction);
+        await handleSlashCommand(interaction);
     }
 });
 
 const handleSlashCommand = async(
-    client: Client,
     interaction: BaseCommandInteraction
 ) => {
     const slashCommand = Commands.find(
@@ -51,7 +41,7 @@ const handleSlashCommand = async(
         return;
     }
     await interaction.deferReply();
-    slashCommand.run(client, interaction);
+    slashCommand.run(interaction);
 };
 
 client.login(process.env.TOKEN).catch((err) => {
