@@ -15,6 +15,7 @@
   "exclude": [
     ".git",
     "node_modules",
-    "build"
+    "build",
+    "commands/tests"
   ]
 }
