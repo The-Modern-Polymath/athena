@@ -80,7 +80,7 @@ _Please adhere to the following guidelines._ We want to avoid duplicate issues, 
 5. Make sure to test your bot on a local/personal testing Discord server
 6. Make sure your branch is updated with the master branch before sending your pull request, in case other changes have been made
 7. Make sure that your new feature is properly tested, and that it can pass all tests before submitting the pull request.
-8. Send your pull request to the [develop branch](https://github.com/The-Modern-Polymath/athena/tree/main)
+8. Send your pull request to the [main branch](https://github.com/The-Modern-Polymath/athena/tree/main)
 
 ## Frequently Asked Questions <a name = "faq"></a>
 
