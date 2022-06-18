@@ -1,6 +1,6 @@
 # Contributing
 
-Hey there! Thanks for thinking about helping us bring new features for Athena, the modern polymaths discord bot, to life. She will have more awesome features because you are helping contribute.
+Hey there! Thanks for thinking about helping us bring new features for Athena, The Modern Polymath's Discord bot, to life. She will have more awesome features because you are helping contribute.
 If you want more information, check out our [README file](README.md).
 
 ## Table of Contents
@@ -40,7 +40,7 @@ Athena is based on [NodeJS](https://nodejs.org/en/), which is required to run it
 
 #### Installing Dependencies
 
-Now that you have Node installed, you can go ahead and install the required dependencies by running `npm ci` in the root directory _after installing NodeJS_. This may take a while. Have a coffee while you wait! []~(￣▽￣)~*
+Now that you have Node installed, you can go ahead and install the required dependencies by running `npm ci` in the root directory _after installing NodeJS_. This may take a while. Have a coffee while you wait! []\~(￣▽￣)\~*
 
 #### Discord API Usage<a name = "discord-api"></a>
 
@@ -75,8 +75,8 @@ _Please adhere to the following guidelines._ We want to avoid duplicate issues, 
 
 1. Search the [Issue Tracker](https://github.com/The-Modern-Polymath/athena/issues) for any relevant threads to what you're looking to create a PR for.
 2. Keep it detailed. We want to know your vision, and the more you give us the better discussion we can have!
-3. Please make sure you have read the [license agreement](LICENSE.md). We're using the [MIT License](https://opensource.org/licenses/MIT)- it's only 3 paragraphs!  
-4. Make a new branch to fork your changes from
+3. Please make sure you have read the [license agreement](LICENSE.md). We're using the [MIT License](https://opensource.org/licenses/MIT)- it's only 3 paragraphs!
+4. Fork the main repo and make a new branch for your changes  
 5. Make sure to test your bot on a local/personal testing Discord server
 6. Make sure your branch is updated with the master branch before sending your pull request, in case other changes have been made
 7. Make sure that your new feature is properly tested, and that it can pass all tests before submitting the pull request.
