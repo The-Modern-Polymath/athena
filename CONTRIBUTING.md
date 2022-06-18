@@ -84,4 +84,4 @@ _Please adhere to the following guidelines._ We want to avoid duplicate issues, 
 
 ## Frequently Asked Questions <a name = "faq"></a>
 
-Nothing added here yet. ¯\\_(ツ)_/¯
+Nothing added here yet. ¯\\\_(ツ)\_/¯
